@@ -11,8 +11,17 @@ interface PlaylistProps {
 }
 
 /**
- * Playlist component displaying all available songs
- * Highlights the currently playing song with an indicator
+ * Playlist view component displaying all available songs.
+ *
+ * Renders a scrollable list of songs with album thumbnails, metadata,
+ * and duration. Highlights the currently playing song with a visual
+ * indicator and animated soundwave visualization. Supports keyboard
+ * navigation (Enter key to select).
+ *
+ * @param songs - Array of song objects to display
+ * @param currentSongIndex - Index of the currently playing song
+ * @param isPlaying - Whether the current song is playing (affects indicator animation)
+ * @param onSongSelect - Callback function triggered when user selects a song (receives song index)
  */
 const Playlist = ({
   songs,

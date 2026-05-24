@@ -3,7 +3,13 @@ interface NowPlayingIndicatorProps {
 }
 
 /**
- * Animated sound wave indicator for currently playing song
+ * Animated sound wave indicator for the currently playing song.
+ *
+ * Displays an animated three-bar visualizer when music is playing,
+ * and shows a static play symbol when paused. Used as overlay
+ * indicator in the playlist view.
+ *
+ * @param isPlaying - Whether the song is currently playing (true) or paused (false)
  */
 const NowPlayingIndicator = ({ isPlaying }: NowPlayingIndicatorProps) => {
   if (!isPlaying) {

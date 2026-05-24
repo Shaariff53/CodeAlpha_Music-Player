@@ -1,6 +1,6 @@
 # Harmony Music Player - Features Documentation
 
-## ✅ Implemented Features
+## Implemented Features
 
 ### 1. **Music Player Interface**
 - **HTML Structure**: Built with React components and semantic HTML
@@ -65,7 +65,7 @@
 - Cycle through modes by clicking the repeat button
 - Works seamlessly with autoplay feature
 
-## 📁 File Structure
+## File Structure
 
 ```
 src/components/music/
@@ -87,7 +87,7 @@ src/utils/
 └── formatTime.ts            # Time formatting utility (MM:SS)
 ```
 
-## 🎵 Data Structure
+## Data Structure
 
 Each song contains:
 - `id`: Unique identifier
@@ -97,7 +97,7 @@ Each song contains:
 - `cover`: Album art URL
 - `audioSrc`: Audio file URL
 
-## 🎨 Styling Highlights
+## Styling Highlights
 
 - **Dark Theme**: Moody dark background with cyan/teal accents
 - **Glass Effects**: Frosted glass cards with transparency
@@ -106,7 +106,7 @@ Each song contains:
 - **Responsive Typography**: Font sizes scale with screen size
 - **Accessibility**: Full ARIA labels and keyboard navigation support
 
-## 🚀 Usage
+## Usage
 
 1. **Playing Music**: Click the play button or select a song from the playlist
 2. **Seeking**: Click on the progress bar to jump to a specific time
@@ -117,7 +117,7 @@ Each song contains:
    - Use Repeat modes for looping
    - Toggle Autoplay to control automatic next-track behavior
 
-## 🔧 Technologies Used
+## Technologies Used
 
 - **React 18+**: Component-based UI framework
 - **TypeScript**: Type-safe JavaScript
@@ -128,4 +128,4 @@ Each song contains:
 
 ---
 
-All requested features have been successfully implemented! 🎉
+All requested features have been successfully implemented.

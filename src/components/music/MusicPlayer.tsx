@@ -8,8 +8,26 @@ import Playlist from "./Playlist";
 import { Disc3 } from "lucide-react";
 
 /**
- * Main Music Player component
- * Handles all audio playback logic and state management
+ * Main Music Player component orchestrating all audio playback functionality.
+ *
+ * This is the central component that manages:
+ * - Audio playback state (play, pause, current time, volume)
+ * - Song navigation (previous, next, shuffle, repeat modes)
+ * - Playlist management and song selection
+ * - Audio element lifecycle and event handling
+ *
+ * State managed:
+ * - isPlaying: Current playback state
+ * - currentSongIndex: Index of the currently playing song
+ * - currentTime: Current playback position (seconds)
+ * - duration: Total song duration (seconds)
+ * - volume: Volume level (0-1 range)
+ * - shuffle: Whether shuffle mode is enabled
+ * - repeat: Current repeat mode (off, one, all)
+ * - autoplay: Whether to automatically play next song when current ends
+ *
+ * The component uses HTML5 Audio API for audio playback and manages
+ * all event listeners for audio updates, song changes, and user interactions.
  */
 const MusicPlayer = () => {
   // Player state

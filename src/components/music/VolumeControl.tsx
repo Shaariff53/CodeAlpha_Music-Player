@@ -7,7 +7,15 @@ interface VolumeControlProps {
 }
 
 /**
- * Volume control with slider and mute toggle
+ * Volume control component with slider and mute toggle.
+ *
+ * Provides an interactive volume slider (0-1 range) and a mute button
+ * that displays different icons based on volume level. When muted,
+ * stores the previous volume for easy restoration. Fully accessible
+ * with ARIA labels and keyboard support.
+ *
+ * @param volume - Current volume level (0-1 range, where 0 is muted and 1 is max)
+ * @param onVolumeChange - Callback function triggered when volume changes (receives new volume level 0-1)
  */
 const VolumeControl = ({ volume, onVolumeChange }: VolumeControlProps) => {
   const sliderRef = useRef<HTMLDivElement>(null);

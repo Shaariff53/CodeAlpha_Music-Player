@@ -14,8 +14,28 @@ interface PlayerControlsProps {
 }
 
 /**
- * Main player control buttons: Previous, Play/Pause, Next
- * Includes shuffle and repeat buttons (visual only for now)
+ * Player control buttons component with playback and playlist management controls.
+ *
+ * Renders the main control buttons in a horizontal layout:
+ * - Shuffle button: Toggle shuffle mode for random song selection
+ * - Previous button: Go to the previous song
+ * - Play/Pause button: Toggle between playing and paused states
+ * - Next button: Go to the next song or trigger autoplay
+ * - Repeat button: Cycle through repeat modes (off, one, all)
+ *
+ * The component provides visual feedback for active modes and disables
+ * navigation buttons when not applicable (e.g., previous when at first song).
+ *
+ * @param isPlaying - Current playback state
+ * @param canGoBack - Whether previous button should be enabled
+ * @param canGoForward - Whether next button should be enabled
+ * @param onPlayPause - Callback triggered when play/pause button is clicked
+ * @param onPrevious - Callback triggered when previous button is clicked
+ * @param onNext - Callback triggered when next button is clicked
+ * @param onShuffle - Optional callback triggered when shuffle button is clicked
+ * @param onRepeat - Optional callback triggered when repeat button is clicked
+ * @param repeatMode - Current repeat mode (off, one, all) for visual indicator
+ * @param isShuffle - Whether shuffle mode is currently enabled
  */
 const PlayerControls = ({
   isPlaying,

@@ -8,8 +8,15 @@ interface ProgressBarProps {
 }
 
 /**
- * Interactive progress bar with seek functionality
- * Shows current time, total duration, and allows clicking to seek
+ * Interactive progress bar with seek functionality.
+ *
+ * Displays the current playback position and allows users to seek
+ * to a specific time by clicking on the progress bar. Shows both
+ * current time and total duration. Fully accessible with ARIA labels.
+ *
+ * @param currentTime - Current playback position in seconds
+ * @param duration - Total duration of the track in seconds
+ * @param onSeek - Callback function triggered when user seeks to a position (time in seconds)
  */
 const ProgressBar = ({ currentTime, duration, onSeek }: ProgressBarProps) => {
   const progressRef = useRef<HTMLDivElement>(null);

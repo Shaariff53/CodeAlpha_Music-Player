@@ -1,7 +1,8 @@
 {
-  "name": "vite_react_shadcn_ts",
-  "private": true,
-  "version": "0.0.0",
+  "name": "harmony-player",
+  "description": "A modern, feature-rich music player web application built with React, TypeScript, and Tailwind CSS",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

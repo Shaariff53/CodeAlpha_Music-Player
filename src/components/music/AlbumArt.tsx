@@ -5,7 +5,17 @@ interface AlbumArtProps {
 }
 
 /**
- * Album artwork display with spinning animation when playing
+ * Album artwork display component with responsive sizing.
+ *
+ * Renders the album cover image for the currently playing song.
+ * Dimensions are responsive based on screen size:
+ * - Mobile: 256x256px
+ * - Tablet: 288x288px
+ * - Desktop: 320x320px
+ *
+ * @param cover - URL of the album cover image
+ * @param title - Song title (used for alt text)
+ * @param isPlaying - Whether the song is currently playing
  */
 const AlbumArt = ({ cover, title, isPlaying }: AlbumArtProps) => {
   return (
